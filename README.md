@@ -1,4 +1,5 @@
-|   | Problem                                   | Runtime (beats) | Memory           | 
-|---|-------------------------------------------|-----------------|------------------|
-| 1 | [Two Sum](src/main/problem_0001)          | 3 ms (64.18%)   | 42.7 MB (66.55%) |      
-| 2 | [Palindrome Number](src/main/problem0009) | 10 ms (53.39%)  | 41.9 MB 72.12%   | 
+|    | Problem                                   | Runtime (beats) | Memory (beats)   | 
+|----|-------------------------------------------|-----------------|------------------|
+| 1  | [Two Sum](src/main/problem_0001)          | 3 ms (64.18%)   | 42.7 MB (66.55%) |      
+| 9  | [Palindrome Number](src/main/problem_0009) | 10 ms (53.39%)  | 41.9 MB (72.12%) | 
+| 26 | [Remove Duplicates from Sorted Array](src/main/problem_0026)                  | 1 ms (99.90%)   | 44.1 MB (54.47%) |
