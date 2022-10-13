@@ -21,7 +21,7 @@
     </label>
     <hr>
     <input type="submit" value="Submit"/>
-    <input type="button" onclick="history.back();" value="Cancel">
+    <input type="button" onclick="window.history.back();" value="Cancel">
 </form>
 </body>
 </html>

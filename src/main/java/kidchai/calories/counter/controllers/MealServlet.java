@@ -1,7 +1,7 @@
-package kidchai.calories.counter.web;
+package kidchai.calories.counter.controllers;
 
-import kidchai.calories.counter.dao.MealDao;
-import kidchai.calories.counter.dao.MealDaoInMemory;
+import kidchai.calories.counter.repository.MealRepository;
+import kidchai.calories.counter.repository.InMemoryMealRepository;
 import kidchai.calories.counter.model.Meal;
 import kidchai.calories.counter.util.MealsUtil;
 import org.slf4j.Logger;
@@ -13,11 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Objects;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
 public class MealServlet extends HttpServlet {
-    private final MealDao meals = new MealDaoInMemory();
+    private final MealRepository meals = new InMemoryMealRepository();
     private static final Logger log = getLogger(MealServlet.class);
 
     @Override
@@ -38,7 +39,7 @@ public class MealServlet extends HttpServlet {
                 }
                 request.setAttribute("meal", meal);
                 log.debug("forward to meals");
-                request.getRequestDispatcher("edit.jsp").forward(request, response);
+                request.getRequestDispatcher("mealForm.jsp").forward(request, response);
                 break;
             case "delete":
                 log.debug("'delete'");
@@ -73,6 +74,7 @@ public class MealServlet extends HttpServlet {
     }
 
     private int getId(HttpServletRequest request) {
-        return Integer.parseInt(request.getParameter("id"));
+        String paramId = Objects.requireNonNull(request.getParameter("id"));
+        return Integer.parseInt(paramId);
     }
 }

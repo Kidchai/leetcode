@@ -1,4 +1,4 @@
-package kidchai.calories.counter.web;
+package kidchai.calories.counter.controllers;
 
 import org.slf4j.Logger;
 

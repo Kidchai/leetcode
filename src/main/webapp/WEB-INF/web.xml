@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>userServlet</servlet-name>
-        <servlet-class>kidchai.calories.counter.web.UserServlet</servlet-class>
+        <servlet-class>kidchai.calories.counter.controllers.UserServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>
@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>mealServlet</servlet-name>
-        <servlet-class>kidchai.calories.counter.web.MealServlet</servlet-class>
+        <servlet-class>kidchai.calories.counter.controllers.MealServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>

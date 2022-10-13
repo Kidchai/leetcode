@@ -1,4 +1,4 @@
-package kidchai.calories.counter.dao;
+package kidchai.calories.counter.repository;
 
 import kidchai.calories.counter.model.Meal;
 import kidchai.calories.counter.util.MealsUtil;
@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MealDaoInMemory implements MealDao {
+public class InMemoryMealRepository implements MealRepository {
     private final ConcurrentMap<Integer, Meal> mealMap = new ConcurrentHashMap<>();
     public static final AtomicInteger index = new AtomicInteger();
 

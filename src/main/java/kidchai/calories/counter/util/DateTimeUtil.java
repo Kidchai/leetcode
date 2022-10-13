@@ -2,7 +2,7 @@ package kidchai.calories.counter.util;
 
 import java.time.LocalTime;
 
-public class TimeUtil {
+public class DateTimeUtil {
     public static boolean isBetweenHalfOpen(LocalTime lt, LocalTime startTime, LocalTime endTime) {
         if (startTime == null && endTime == null) {
             return true;
