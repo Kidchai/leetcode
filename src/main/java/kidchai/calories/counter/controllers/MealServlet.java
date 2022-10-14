@@ -1,7 +1,7 @@
 package kidchai.calories.counter.controllers;
 
 import kidchai.calories.counter.repository.MealRepository;
-import kidchai.calories.counter.repository.InMemoryMealRepository;
+import kidchai.calories.counter.repository.storage.InMemoryMealRepository;
 import kidchai.calories.counter.model.Meal;
 import kidchai.calories.counter.util.MealsUtil;
 import org.slf4j.Logger;

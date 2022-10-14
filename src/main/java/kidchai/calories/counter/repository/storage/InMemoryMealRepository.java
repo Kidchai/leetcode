@@ -1,6 +1,7 @@
-package kidchai.calories.counter.repository;
+package kidchai.calories.counter.repository.storage;
 
 import kidchai.calories.counter.model.Meal;
+import kidchai.calories.counter.repository.MealRepository;
 import kidchai.calories.counter.util.MealsUtil;
 
 import java.util.Collection;
